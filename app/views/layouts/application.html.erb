@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Splurty</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -37,6 +37,25 @@
           <hr />
           <br class="clear" />
           
-    <%= yield %>
+          <div class="container"> 
+           <%= yield %>
+          </div>
+           
+   <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+       <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      
+      <div class="col-6 footer-blurb">
+        Proudly hacked in Seattle, WA by <a href="http://thefirehoseproject.com">Joanna</a><br />
+        Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+      </div>
+        </div>
+      </div>
+    </div>
+          
+    
   </body>
 </html>
